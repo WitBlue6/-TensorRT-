@@ -118,7 +118,7 @@ python run_engine.py
 ### 2.1 资源准备
 假设你已经拥有使用 `yolov5-v6.0` 训练得到 `.pt` 权重文件（例如：`yolov5s.pt`）
 ``` bash
-# 克隆 YOLOv5 官方仓库 (v5.0 分支)
+# 克隆 YOLOv5 官方仓库 (v6.0 分支)
 git clone -b v5.0 https://github.com/ultralytics/yolov5.git
 
 #具体训练步骤参考git官方步骤，通过训练后可以得到后续所需.pt格式文件。
