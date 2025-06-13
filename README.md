@@ -18,9 +18,9 @@ git clone
 cd yourrepository
 ```
 
-#### 1.2.1 上位机
+### 1.2.1 上位机
 项目中 `transfer` 目录包含上位机所有代码。
-##### 安装依赖
+#### 安装依赖
 ```bash
 # 进入目录
 cd ./transfer
@@ -28,7 +28,7 @@ cd ./transfer
 # 安装依赖
 pip install -r requirements.txt
 ```
-##### 修改ip地址
+#### 修改ip地址
 安装完依赖后，首先修改代码中ip地址为自己主机与jetson开发板的ip地址。  
 
 ```python
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     my_port = 8765
     server_uri = "ws://10.171.103.229:8765"  # jetson开发板
 ```
-##### 指定大模型API
+#### 指定大模型API
 运行大模型需要指定环境变量
 
 ```bash
@@ -55,7 +55,7 @@ export GPT_BASE_URL=YOUR_BASE_URL
 export GPT_API_KEY=YOUR_API_KEY
 ```
 
-##### 运行代码
+#### 运行代码
 
 ```bash
 python main.py
@@ -63,7 +63,7 @@ python main.py
 
 大模型默认索引目录为./datas，如要修改，请**修改user_read_file、user_list_file、user_load_image中的base_path**。  
 
-#### 1.2.2 开发板
+### 1.2.2 开发板
 开发板Jetpack系统版本为 `4.6.5` ，支持最高Python版本为 `3.6.9` 
 ##### 安装依赖
 ```bash
@@ -73,7 +73,7 @@ cd ./receive
 # 安装依赖
 pip install -r requirements.txt
 ```
-##### 修改ip地址
+#### 修改ip地址
 同理修改代码中ip地址
 
 ```python
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     )
     transfer.run()
 ```
-##### 修改引擎文件（.pt文件）地址
+#### 修改引擎文件（.pt文件）地址
 <mark>请保证引擎文件地址或.pt文件路径正确！！！<mark>，不正确请修改  
 
 ```bash
@@ -101,7 +101,7 @@ vim run_yolo.py
 img_process, detection_info = detect_image(img, weights="best.pt", device="0")
 ```
 
-##### 运行代码
+#### 运行代码
 
 ```bash
 # 请先在代码中配置.engine文件（或.pt文件）的路径，并保证网络通畅
