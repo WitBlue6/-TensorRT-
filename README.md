@@ -3,12 +3,16 @@
 
 实验中使用**MacBook Air M4作为上位机**，将遥感图像通过websocket发送至Jetson开发板，Jetson AGX Xavier作为边缘设备，使用TensorRT进行模型推理，**将处理后的图像通过websocket发送回上位机。**   
 ## 效果展示
+
 ### 主界面
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/5fc90071-1bf8-4886-b3bb-551fdad28cf0" />
+
 ### 加速效果
 ![image](https://github.com/user-attachments/assets/def3c677-613c-4f24-b424-bd3c828acc87)
+
 ### Agent智能代理
 <img width="505" alt="image" src="https://github.com/user-attachments/assets/acc27e79-6a56-43fe-8781-caa804612aca" />
+
 ## 1.运行仓库代码
 ### 1.1 网络连接
 要实现两个设备时间数据互传，首先要**保证两台设备之间能够ping通**。  
