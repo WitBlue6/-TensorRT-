@@ -10,7 +10,8 @@
 ### 主界面
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/5fc90071-1bf8-4886-b3bb-551fdad28cf0" />
 
-### 加速效果
+### 加速效果  
+由原来平均1200ms处理一张图片加速到40ms以内  
 ![image](https://github.com/user-attachments/assets/def3c677-613c-4f24-b424-bd3c828acc87)
 
 ### Agent智能代理
