@@ -4,6 +4,9 @@
 实验中使用**MacBook Air M4作为上位机**，将遥感图像通过websocket发送至Jetson开发板，Jetson AGX Xavier作为边缘设备，使用TensorRT进行模型推理，**将处理后的图像通过websocket发送回上位机。**   
 ## 效果展示
 
+### 视频链接  
+【嵌入式第二次大作业-智能遥感图像处理系统】 https://www.bilibili.com/video/BV1xDMAzsEp8
+
 ### 主界面
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/5fc90071-1bf8-4886-b3bb-551fdad28cf0" />
 
